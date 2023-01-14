@@ -2,7 +2,7 @@ import 'package:dictionary/app/modules/home/category_model.dart';
 import 'package:dictionary/app/modules/home/views/category_view.dart';
 import 'package:dictionary/app/modules/home/views/word_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -146,7 +146,7 @@ class HomeView extends GetView<HomeController> {
                 Container(
                     height: 55,
                     child:
-                        Expanded(child: CategoryList(controller: controller))),
+                        CategoryList(controller: controller)),
                 SizedBox(
                   height: 10,
                 ),
